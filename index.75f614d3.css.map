@@ -1,0 +1,1 @@
+{"mappings":"ACAA,qBAIA","sources":["index.75f614d3.css","src/css/styles.css"],"sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\n\n.is-hidden {\n  visibility: hidden;\n}\n\n/*# sourceMappingURL=index.75f614d3.css.map */\n","*{\n  margin: 0;\n  padding: 0;\n}\n.is-hidden{\n  visibility: hidden;\n}"],"names":[],"version":3,"file":"index.75f614d3.css.map"}
