@@ -11,7 +11,7 @@ const catInfo = document.querySelector('.cat-info');
 
 error.classList.add('is-hidden');
 
-function addNameandI(breed) {
+function addNameanId(breed) {
   select.innerHTML = breed
     .map(breed => `<option value="${breed.id}">${breed.name}</option>`)
     .join('\n');
@@ -19,7 +19,7 @@ function addNameandI(breed) {
 function fetchBreedsAndSetPetsList() {
   fetchBreeds()
     .then(result => {
-        addNameandI(result);
+        addNameanId(result);
     })
     .then(() => new SlimSelect({ select: `.breed-select` }))
     .catch(() => {
