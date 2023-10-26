@@ -3,5 +3,5 @@
   padding: 0;
 }
 .is-hidden{
-  visibility: hidden;
+  display: none;
 }

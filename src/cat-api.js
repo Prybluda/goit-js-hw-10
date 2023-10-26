@@ -5,8 +5,16 @@ axios.defaults.baseURL = 'https://api.thecatapi.com/v1';
 
 function fetchBreeds(){
    return axios.get('/breeds')
-.then((responce) => responce.data)
+.then(responce => {
+    return responce.data});
  }
- 
-export {fetchBreeds}
-fetchBreeds().then(res=> console.log(res))
+
+ function fetchCatByBreed(breedId) {
+    return axios.get(`/images/search?breed_ids=${breedId}`).then(resp => {
+      return resp.data;
+    });
+  }
+  
+
+export {fetchBreeds, fetchCatByBreed}
+// fetchBreeds().then(res=> console.log(res))
